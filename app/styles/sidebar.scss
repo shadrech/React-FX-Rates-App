@@ -1,0 +1,44 @@
+#sidebar {
+    width: 30%;
+    position: absolute;
+    top: 0;
+    font-family: Garamond, "Times New Roman";
+	ul {
+		border-right: $dark-blue 1px solid;
+		margin-right: 50px;
+	    text-align: right;
+        height: 300px;
+	    padding-top: 45px;
+	    margin-top: 50px;
+		li {
+			padding-right: 30px;
+			list-style: none;
+		    height: 50px;
+		    display: flex;
+		    justify-content: flex-end;
+		    align-items: center;
+		    margin: 10px 0;
+		    border-right: $dark-blue 0 solid;
+			transition: all .2s ease-out;
+			a {
+				color: $light-blue;
+				text-transform: capitalize;
+				text-decoration: none;
+				font-size: 3em;
+				transition: all .2s ease-out;
+			}
+			&.active {
+	    	    border-right: $dark-blue 10px solid;
+	    	    a {
+	    	    	color: $dark-blue;
+	    	    }
+		    }
+		    &:hover {
+		    	border-right: $dark-blue 10px solid;
+		    }
+		}
+	}
+	&.fix {
+		position: fixed;
+	}
+}

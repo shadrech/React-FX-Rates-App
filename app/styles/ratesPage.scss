@@ -1,0 +1,125 @@
+.content {
+	#rates {
+		padding: 0 100px;
+		.inputs {
+			display: flex;
+		    align-items: center;
+		    justify-content: space-around;
+		    .submitBtn {
+	    	    height: 56px;
+			    width: 70px;
+			    border: none;
+			    background: #7089b4;
+			    color: white;
+			    font-size: 1.5em;
+			    font-family: Helvitica, "Times New Roman";
+		    }
+		}
+		.rates {
+		    text-align: center;
+		    .loader {
+		    	margin-top: 70px;
+		    }
+		    .error-mssg {
+		    	color: #b94040;
+	    	    margin: 10px 0;
+		    }
+			.rates-wrapper {
+				h1.rates_base {
+					margin-bottom: 0;
+					font-family: "Arial Black";
+					color: $grey;
+				    line-height: .8em;
+    				font-size: 2.5em;
+				}
+				.rates-list {
+					border: 1px solid $grey;
+					padding: 15px 15px 5px 15px;
+
+					/* Rate.js Component */
+					.rate-wrapper {
+						position: relative;
+						display: block;
+						margin-bottom: 10px;
+						background: $grey;
+						.rate {
+							width: 100%;
+							height: 50px;
+							display: flex;
+							justify-content: space-between;
+							align-items: center;
+							.convert-section {
+							    display: flex;
+	    						align-items: center;
+	    						padding-left: 20px;
+								p {
+									position: relative;
+									display: inline-block;
+									font-family: "Times New Roman", Garamond;
+									color: $dark-grey;
+									font-size: 1.5em;
+									margin: 0 10px;
+									span {
+										font-size: .7em;
+									}
+								}
+								.arrow {
+									position: relative;
+									display: inline-block;
+									width: 3em;
+									svg {
+										path {
+											fill: white;
+										}
+									}
+								}
+							}
+							.figure-section {
+								p {
+									font-size: 2em;
+									color: grey;
+									margin: 0;
+								}
+							}
+							.expand-section {
+								padding-right: 20px;
+								svg {
+									width: 30px;
+									path {
+										fill: $dark-grey;
+									}
+									&:hover {
+										cursor: pointer;
+									}
+								}
+								&.active {
+									svg {
+										transform: rotate(180deg);
+									}
+								}
+							}
+						}
+						.history {
+							position: relative;
+							display: block;
+						    hr {
+						    	margin-top: 0;
+						    	width: 90%;
+						    }
+						    h4 {
+						    	font-family: Garamond, "Times New Roman";
+						    	color: grey;
+						    }
+						    .loader2 {
+					    	    margin: 30px 0;
+						    }
+						    .recharts-layer.recharts-cartesian-axis {
+						    	font-size: .8em;
+						    }
+						}
+					}
+				}
+			}
+		}
+	}
+}

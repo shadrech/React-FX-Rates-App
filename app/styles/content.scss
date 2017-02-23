@@ -1,0 +1,12 @@
+.content-container {
+	position: relative;
+	display: block;
+	.content {
+	    position: absolute;
+	    width: 69%;
+        margin: 2.5em 0 50px 30%;
+        color: $dark-grey;
+        font-family: "Times New Roman";
+    	font-size: 1.2em;
+	}
+}

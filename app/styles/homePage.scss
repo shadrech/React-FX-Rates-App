@@ -1,0 +1,21 @@
+.content {
+	.home-wrapper {
+		text-align: center;
+		padding: 0 100px;
+		video {
+			display: block;
+		    width: 70%;
+		    margin-left: 15%;
+    		border-radius: 50%;
+    		opacity: .7;
+		}
+		h2 {
+			color: $green;
+			margin-bottom: 5px;
+		}
+		p {
+		    font-size: 1.3em;
+    		margin-top: 0;
+		}
+	}
+}

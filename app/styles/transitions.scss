@@ -1,0 +1,10 @@
+/* Rate.js transition */
+.rate_transition-appear {
+	opacity: 0;
+	height: 40px;
+}
+.rate_transition-appear.rate_transition-appear-active {
+	opacity: 1;
+	height: 50px;
+	transition: all .5s ease-out;
+}

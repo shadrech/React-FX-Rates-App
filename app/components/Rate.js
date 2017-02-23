@@ -24,6 +24,7 @@ class Rate extends Component {
 
 	render() {
 		const { base, rate } = this.props;
+		console.log(rate[0]);
 		
 		return (
 			<div className="rate-wrapper">
@@ -33,7 +34,7 @@ class Rate extends Component {
 						<div className="arrow"><ArrowSVG /></div>
 						<p>
 							{rate[0]}
-							<span>{` (${currency[currency.findIndex((c) => c.code.toUpperCase() == base.toUpperCase())].name})`}</span>
+							<span>{` (${currency[currency.findIndex((c) => c.code.toUpperCase() == rate[0].toUpperCase())].name})`}</span>
 						</p>
 					</div>
 					<div className="figure-section">

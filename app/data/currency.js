@@ -92,4 +92,7 @@ export default [{
 }, {
 	name: "Euro",
 	code: "EUR"
+}, {
+	name: "United States Dollar",
+	code: "USD"
 }];

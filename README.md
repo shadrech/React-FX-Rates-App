@@ -12,3 +12,5 @@ $ npm start
 ```
 
 App will be live at "http://localhost:9000" in your browser
+
+![Alt text](https://github.com/shadrech/React-FX-Rates-App/blob/master/_design/screenshot.png)
